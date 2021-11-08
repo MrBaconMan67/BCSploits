@@ -22,18 +22,19 @@ local TextLabel_2 = Instance.new("TextLabel")
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
+
 main.Name = "main"
 main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
 main.Position = UDim2.new(0.251740217, 0, 0.220676005, 0)
 main.Size = UDim2.new(0, 469, 0, 233)
+main.Active = true
+main.Draggable = true
 
 Frame.Parent = main
 Frame.BackgroundColor3 = Color3.fromRGB(66, 246, 255)
 Frame.Position = UDim2.new(0, 0, 0.978901565, 0)
 Frame.Size = UDim2.new(0, 469, 0, 4)
-main.Active = true
-main.Draggable = true
 
 Frame_2.Parent = main
 Frame_2.BackgroundColor3 = Color3.fromRGB(66, 246, 255)
@@ -240,7 +241,7 @@ chatlogs.Font = Enum.Font.SciFi
 chatlogs.Text = "Chatlogs"
 chatlogs.TextColor3 = Color3.fromRGB(0, 0, 0)
 chatlogs.TextSize = 17.000
-Chatlogs.MouseButton1Down:connect(function()
+chatlogs.MouseButton1Down:connect(function()
 	--This script reveals ALL hidden messages in the default chat
 	--chat "/MagmaHacks" to toggle!
 	enabled = true
