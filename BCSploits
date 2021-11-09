@@ -457,6 +457,8 @@ AutoArmor.MouseButton1Down:connect(function()
 			end
 		end)
 	end
+	coroutine.resume(coroutine.create(Main1))
+	coroutine.resume(coroutine.create(Main2))
 end)
 
 AntiStomp.Name = "AntiStomp"
