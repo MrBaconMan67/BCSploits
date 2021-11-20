@@ -339,7 +339,7 @@ Crash.Text = "Crash"
 Crash.TextColor3 = Color3.fromRGB(0, 0, 0)
 Crash.TextSize = 17.000
 Crash.MouseButton1Down:connect(function()
-	w
+	
 end)
 
 Swagmode.Name = "Swagmode"
